@@ -6,7 +6,7 @@ set -e
 echo "=== Creating kind cluster ==="
 
 if ! kind get clusters | grep -q "^kind$"; then
-    kind create cluster --config cluster.yml
+    kind create cluster --config .infrastructure/cluster.yml
 else
     echo "Cluster already exists"
 fi
