@@ -20,7 +20,7 @@ kubectl apply -f .infrastructure/mysql-init.yml
 kubectl apply -f .infrastructure/mysql-service.yml
 
 echo "=== Applying Django configuration ==="
-kubectl apply -f .infrastructure/confgiMap.yml
+kubectl apply -f .infrastructure/configMap.yml
 kubectl apply -f .infrastructure/secret.yml
 kubectl apply -f .infrastructure/db-secret.yml
 
